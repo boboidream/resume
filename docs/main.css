@@ -1,0 +1,225 @@
+@charset "UTF-8";
+html,
+body,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0; }
+
+body {
+  line-height: 2.1;
+  font-family: "PT Sans", "HelveticaNeue", "Helvetica Neue", "Microsoft YaHei", "sans-serif";
+  color: #555;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased; }
+
+h2 {
+  margin-bottom: 20px; }
+
+.wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 60px;
+  width: 945px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 5px 10px #e4e4e4;
+  -moz-box-shadow: 0 5px 10px #e4e4e4;
+  box-shadow: 0 5px 10px #e4e4e4; }
+  .wrapper section {
+    margin-bottom: 88px; }
+
+.about {
+  overflow: hidden; }
+  .about table {
+    float: left;
+    width: 66.66667%; }
+    .about table tr {
+      line-height: 2.5;
+      padding: 0.5em 0.25em; }
+      .about table tr td {
+        border-bottom: 1px solid #eee; }
+    .about table a {
+      display: inline-block;
+      margin-bottom: -0.4em;
+      height: 1.4em;
+      width: 1.4em;
+      opacity: 0.5; }
+    .about table a.fa-blog {
+      background: url(./fa-blog.png);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .about table a.fa-github {
+      margin-left: 3em;
+      background: url(./fa-github.png);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .about table a:hover {
+      opacity: 0.8; }
+  .about .img {
+    float: right;
+    display: block;
+    width: 14.5em;
+    height: 14.5em;
+    border: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: url(./me.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.9; }
+
+.education {
+  position: relative;
+  overflow: hidden; }
+  .education div {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 1em;
+    width: 47.61905%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    line-height: 1.2em;
+    font-family: "FangSong", "仿宋", "STFangsong", "华文仿宋";
+    text-shadow: 1px 0 0 #888;
+    color: #929292;
+    background-color: #efefef; }
+    .education div time {
+      float: right;
+      margin-right: 1em; }
+    .education div p {
+      position: relative; }
+    .education div .angle {
+      position: relative;
+      height: 0;
+      width: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent; }
+  .education div:nth-of-type(1) {
+    font-weight: bold;
+    color: #fff;
+    background-color: #67a2c5; }
+  .education div:nth-of-type(2) {
+    margin-top: 40px; }
+  .education .left {
+    float: left; }
+    .education .left .angle::before, .education .left .left::after {
+      content: "";
+      position: absolute;
+      left: 2em;
+      border-left: 8px solid #efefef;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent; }
+  .education .left:nth-of-type(1) .angle::before, .education .left:nth-of-type(1) .left::after {
+    border-left: 8px solid #67a2c5; }
+  .education .left:before, .education .right:before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 1.2em;
+    left: 50%;
+    margin-left: -5px;
+    width: 6px;
+    height: 6px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background-color: #ccc; }
+  .education .left:nth-of-type(1):before {
+    background-color: #67a2c5; }
+  .education .right {
+    float: right; }
+    .education .right .angle::before, .education .right .left::after {
+      content: "";
+      position: absolute;
+      left: -1.5em;
+      top: -1em;
+      border-right: 8px solid #efefef;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent; }
+  .education .timeline {
+    position: absolute;
+    margin-left: -1px;
+    padding: 0;
+    width: 0;
+    height: 78%;
+    border-right: 2px solid #efefef;
+    left: 50%;
+    z-index: -1; }
+
+.technical ul li {
+  list-style: none;
+  margin-bottom: 20px; }
+  .technical ul li .score-box {
+    height: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #eee; }
+    .technical ul li .score-box span {
+      display: block;
+      height: 100%;
+      line-height: 30px;
+      -webkit-border-radius: 5px 0 0 5px;
+      -moz-border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px;
+      text-align: center;
+      color: #fff; }
+.technical ul li:nth-of-type(1) .score-box span {
+  width: 80%;
+  background-color: #be464c; }
+.technical ul li:nth-of-type(2) .score-box span {
+  width: 70%;
+  background-color: #6247bc; }
+.technical ul li:nth-of-type(3) .score-box span {
+  width: 70%;
+  background-color: #63c488; }
+.technical ul li:nth-of-type(4) .score-box span {
+  width: 50%;
+  background-color: #a84cc6; }
+.technical ul li:nth-of-type(5) .score-box span {
+  width: 80%;
+  background-color: #00c0f9; }
+
+.experience div a.a-box {
+  display: block;
+  margin-bottom: 20px;
+  padding: 1em;
+  height: 5em;
+  border: 1px solid #eee;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.07);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.07);
+  font-family: "FangSong", "仿宋", "STFangsong", "华文仿宋";
+  list-style: none; }
+  .experience div a.a-box h2 {
+    font-size: 20px; }
+.experience div a {
+  text-decoration: none;
+  color: #67a2c5; }
+.experience div a:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.07); }
+
+footer {
+  text-align: center;
+  margin: 40px 0 -40px 0;
+  color: #bbb; }
+
+/*# sourceMappingURL=main.css.map */
