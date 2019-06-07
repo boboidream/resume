@@ -142,8 +142,14 @@
 			</div>
 		</section>
 		<footer>
-			bobo @ 2017
+			bobo @ <span id="year">2019</span>
 		</footer>
 	</div>
+	<script>
+		var $year = document.getElementById('year')
+		var year = new Date().getFullYear()
+
+		$year.innerHTML = year
+	</script>
 </body>
 </html>
